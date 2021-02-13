@@ -6,7 +6,7 @@
             <input type="text" [(ngModel)]="term" placeholder="Search..">
             <div *ngFor = "let user of susers |filter:term" >
                 <p>
-                    {{user.name}}
+                    {{user.username}}
                 </p>
              </div>
 
