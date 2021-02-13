@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "userM"
+  "defaultProject": "userM",
+  "cli": {
+    "analytics": "c5ba26de-0aee-42d7-8e38-af460f10d511"
+  }
 }
