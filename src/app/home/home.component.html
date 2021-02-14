@@ -19,7 +19,11 @@
     <div class="flex-child green">
         <input type="text" [(ngModel)]="nemail" placeholder="E-mail">
         <select [(ngModel)]="nstatus">
+<<<<<<< HEAD
             <option value="" disabled >Choose Status</option>
+=======
+            <option value="" disabled>Choose Status</option>
+>>>>>>> 64b0ba2c100d51bf40c425ab5bb9876dcd8c3d80
             <ng-container  *ngFor="let status of statuses">
                 <option value="{{status}}">{{status}}</option>
             </ng-container>
