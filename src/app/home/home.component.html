@@ -1,29 +1,25 @@
 <app-navbar></app-navbar>
-    <div class="flex-container">
+<div class="flex-container">
 
-        <div class="flex-child magenta">
-             <div>
+    <div class="flex-child magenta">
+        <div>
             <input type="text" [(ngModel)]="term" placeholder="Search..">
-            <div *ngFor = "let user of susers |filter:term" >
+            <div *ngFor="let user of susers |filter:term">
                 <p>
                     {{user.username}}
                 </p>
-             </div>
+            </div>
 
- 
-        </div> 
+
+        </div>
     </div>
 
-    
-    
+
+
     <div class="flex-child green">
         <input type="text" [(ngModel)]="nemail" placeholder="E-mail">
         <select [(ngModel)]="nstatus">
-<<<<<<< HEAD
             <option value="" disabled >Choose Status</option>
-=======
-            <option value="" disabled>Choose Status</option>
->>>>>>> 64b0ba2c100d51bf40c425ab5bb9876dcd8c3d80
             <ng-container  *ngFor="let status of statuses">
                 <option value="{{status}}">{{status}}</option>
             </ng-container>
@@ -40,5 +36,5 @@
         <button type="button" class="btn btn-dark" (click)="addNew()">add</button>
 
     </div>
-    
+
 </div>

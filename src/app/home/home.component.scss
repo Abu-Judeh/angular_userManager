@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-  }
-  
+}
 
 .flex-container {
     display: flex;
@@ -16,10 +15,9 @@
 .flex-child {
     flex: 1;
     border: 2px solid black;
-}  
+    border-radius: 10px;
+}
 
 .flex-child:first-child {
     margin-right: 20px;
-} 
-
-
+}
