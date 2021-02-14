@@ -1,4 +1,4 @@
-
+<app-navbar></app-navbar>
     <div class="flex-container">
 
         <div class="flex-child magenta">
@@ -17,15 +17,23 @@
     
     
     <div class="flex-child green">
-          <input type="text" [(ngModel)]="nemail" placeholder="E-mail">
-          <input type="text" [(ngModel)]="nstatus" placeholder="Status">
-          <input type="text" [(ngModel)]="nrole" placeholder="Role">
-          <input type="text" [(ngModel)]="nusername" placeholder="User Name">
-         <input type="text" [(ngModel)]="nid" placeholder="id">
-
-          <input type="file" [(ngModel)]="nuserImage" placeholder="User Name">
-
-            <button type="button" class="btn btn-dark" (click)="addNew()">add</button>
+        <input type="text" [(ngModel)]="nemail" placeholder="E-mail">
+        <select [(ngModel)]="nstatus">
+            <option value="" disabled >Choose Status</option>
+            <ng-container  *ngFor="let status of statuses">
+                <option value="{{status}}">{{status}}</option>
+            </ng-container>
+        </select>
+        <select [(ngModel)]="nrole">
+            <option value="" disabled>Choose Role</option>
+            <ng-container *ngFor="let role of roles">
+                <option value="{{role}}">{{role}}</option>
+            </ng-container>
+        </select>
+        <input type="text" [(ngModel)]="nusername" placeholder="User Name">
+        <input type="text" [(ngModel)]="nid" placeholder="id">
+        <input type="file" [(ngModel)]="nuserImage" placeholder="User Name">
+        <button type="button" class="btn btn-dark" (click)="addNew()">add</button>
 
     </div>
     

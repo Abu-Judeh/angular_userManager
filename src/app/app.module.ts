@@ -10,20 +10,27 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { UsersArrayService } from './users-array.service';
+import { AboutComponent } from './about/about.component';
+import { ImageuplodeComponent } from './imageuplode/imageuplode.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    AboutComponent,
+    ImageuplodeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
 
   ],
   providers: [UsersArrayService],
